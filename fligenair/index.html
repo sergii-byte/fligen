@@ -114,7 +114,7 @@
 
     .hero-overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(160deg, rgba(23,36,40,0.90) 0%, rgba(28,42,46,0.72) 50%, rgba(23,36,40,0.65) 100%);
+      background: linear-gradient(to right, rgba(23,36,40,1) 0%, rgba(23,36,40,0.90) 35%, rgba(23,36,40,0.50) 100%);
     }
 
     /* Subtle grid pattern */
@@ -141,8 +141,7 @@
     .hero-logo-side img {
       position: absolute; top: 0; left: 0;
       height: 100%; width: auto; object-fit: contain;
-      -webkit-mask-image: radial-gradient(ellipse 85% 80% at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
-      mask-image: radial-gradient(ellipse 85% 80% at center, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+      filter: drop-shadow(0 8px 32px rgba(0,0,0,0.3));
     }
     .hero-text-side {
       flex: 1; display: flex; flex-direction: column; align-items: flex-end; text-align: right;
@@ -189,7 +188,7 @@
 
     .arabesque-divider {
       display: flex; align-items: center; justify-content: center;
-      gap: 16px; padding: 24px 0; width: 100%; max-width: 600px; margin: 0 auto; flex-basis: 100%;
+      gap: 16px; padding: 24px 0; width: 100%; max-width: 600px; margin: 0 auto; flex-basis: 100%; transform: translateX(42px);
     }
     .arabesque-divider .line {
       flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
@@ -219,7 +218,7 @@
     .hero-stats {
       display: flex; gap: 56px; margin-top: 12px;
       padding-top: 40px; text-align: center;
-      width: 100%; justify-content: center;
+      width: 100%; justify-content: center; transform: translateX(42px);
     }
     .hero-stat h3 {
       font-size: 32px; font-weight: 700; letter-spacing: -0.02em;
