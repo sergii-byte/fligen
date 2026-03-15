@@ -236,6 +236,10 @@
     .section-label {
       font-size: 11px; font-weight: 600; letter-spacing: 3px;
       text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .section-label::before, .section-label::after {
+      content: '۞'; font-size: 10px; opacity: 0.5;
     }
     .section-title {
       font-size: clamp(30px, 3.5vw, 44px); font-weight: 700;
@@ -494,11 +498,6 @@
           </a>
         </div>
       </div>
-      <div class="arabesque-divider">
-        <div class="line"></div>
-        <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
-        <div class="line"></div>
-      </div>
       <div class="hero-stats">
         <div class="hero-stat">
           <h3 data-en="B2B" data-ar="B2B">B2B</h3>
@@ -513,9 +512,13 @@
           <p data-en="Supply Network" data-ar="شبكة توريد">Supply Network</p>
         </div>
       </div>
+      <div class="arabesque-divider" style="transform: translateX(49px);">
+        <div class="line"></div>
+        <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
+        <div class="line"></div>
+      </div>
     </div>
   </section>
-
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="section-inner">
@@ -536,7 +539,6 @@
       </div>
     </div>
   </section>
-
   <!-- SERVICES -->
   <section class="services" id="services">
     <div class="section-inner">
@@ -568,7 +570,6 @@
       </div>
     </div>
   </section>
-
   <!-- COMPLIANCE -->
   <section class="compliance" id="compliance">
     <div class="section-inner">
@@ -586,7 +587,6 @@
       </div>
     </div>
   </section>
-
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="contact-bg"></div>
