@@ -68,10 +68,10 @@
     .nav-logo img { height: 48px; width: auto; }
     .nav-logo-text { display: flex; flex-direction: column; gap: 1px; }
     .nav-logo-title {
-      font-weight: 700; font-size: 17px; color: var(--green);
+      font-weight: 700; font-size: 17px; color: #5C4A2A;
       letter-spacing: 2px; line-height: 1.1;
     }
-    .nav-logo-subtitle { font-size: 10.5px; color: var(--red); letter-spacing: 0.4px; font-weight: 500; }
+    .nav-logo-subtitle { font-size: 10.5px; color: var(--gold); letter-spacing: 0.4px; font-weight: 500; }
 
     .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
     .nav-links a {
@@ -350,12 +350,15 @@
     .form-submit:hover { background: #7E1C2B; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(155,35,53,0.3); }
 
     /* ═══ FOOTER ═══ */
-    footer { background: linear-gradient(135deg, #3D3220 0%, #4E3D28 50%, #3D3220 100%); color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    footer { background: #FFFFFF; color: #5C4A2A; padding: 32px 32px; }
     .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-    .footer-logo { display: flex; align-items: center; gap: 14px; }
-    .footer-logo img { height: 32px; opacity: 0.6; }
-    .footer-text { font-size: 13px; font-weight: 400; }
-    .footer-uae { display: flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.5px; font-weight: 500; }
+    .footer-left { display: flex; flex-direction: column; }
+    .footer-brand { font-size: 16px; font-weight: 700; color: #5C4A2A; letter-spacing: 1.5px; }
+    .footer-brand-sub { font-size: 11px; color: var(--gold); font-weight: 500; letter-spacing: 0.4px; }
+    .footer-center { text-align: center; font-size: 11px; color: var(--gray-600); line-height: 1.8; }
+    .footer-center a { color: var(--gray-600); text-decoration: none; }
+    .footer-center a:hover { color: var(--gold); }
+    .footer-right img { height: 48px; opacity: 0.7; }
     .uae-flag { display: flex; width: 28px; height: 18px; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.1); }
     .uae-flag-vert { background: var(--green); width: 28%; }
     .uae-flag-horiz { width: 72%; display: flex; flex-direction: column; }
@@ -386,6 +389,8 @@
       .form-row { grid-template-columns: 1fr; }
       section { padding: 72px 20px; }
       .footer-inner { flex-direction: column; gap: 20px; text-align: center; }
+      .footer-left { align-items: center; }
+      .footer-right { display: none; }
       .contact-form { padding: 28px 24px; }
     }
 
@@ -412,7 +417,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="logo.png" alt="Fligen Logo">
+        <img src="logo-full.png" alt="Fligen Logo">
         <div class="nav-logo-text">
           <span class="nav-logo-title">FLIGEN</span>
           <span class="nav-logo-subtitle" data-en="Aircrafts Trading" data-ar="تجارة الطائرات">Aircrafts Trading</span>
@@ -552,6 +557,15 @@
           </div>
           <div class="contact-item">
             <div class="contact-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <h4 data-en="Phone" data-ar="الهاتف">Phone</h4>
+              <a href="tel:+40749768909">+40 749 768 909</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-wrap">
               <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
             </div>
             <div>
@@ -609,16 +623,16 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-logo">
-        <img src="logo.png" alt="Fligen">
-        <span class="footer-text" data-en="&copy; 2026 Fligen Aircrafts Trading Ltd. Reg. 1355, Abu Dhabi. All rights reserved." data-ar="&copy; ٢٠٢٦ فليجن لتجارة الطائرات ذ.م.م. سجل تجاري ١٣٥٥، أبوظبي. جميع الحقوق محفوظة.">&copy; 2026 Fligen Aircrafts Trading Ltd. Reg. 1355, Abu Dhabi. All rights reserved.</span>
+      <div class="footer-left">
+        <span class="footer-brand">FLIGEN</span>
+        <span class="footer-brand-sub" data-en="Aircrafts Trading" data-ar="تجارة الطائرات">Aircrafts Trading</span>
       </div>
-      <div class="footer-uae">
-        <div class="uae-flag">
-          <div class="uae-flag-vert"></div>
-          <div class="uae-flag-horiz"><div></div><div></div><div></div></div>
-        </div>
-        <span data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</span>
+      <div class="footer-center">
+        <div data-en="Fligen Aircrafts Trading Ltd., 170A, Building No. 280, Taweelah, Abu Dhabi, UAE" data-ar="فليجن لتجارة الطائرات ذ.م.م، 170A، مبنى رقم 280، الطويلة، أبوظبي، الإمارات">Fligen Aircrafts Trading Ltd., 170A, Building No. 280, Taweelah, Abu Dhabi, UAE</div>
+        <div>phone: <a href="tel:+40749768909">+40749768909</a> &nbsp; e-mail: <a href="mailto:office@fligenair.com">office@fligenair.com</a> &nbsp; web: <a href="https://fligenair.com">fligenair.com</a></div>
+      </div>
+      <div class="footer-right">
+        <img src="logo-icon.png" alt="Fligen">
       </div>
     </div>
   </footer>
