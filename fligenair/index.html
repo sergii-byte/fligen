@@ -130,15 +130,18 @@
       position: relative; z-index: 2;
       max-width: 1180px; margin: 0 auto;
       padding: 140px 32px 100px; width: 100%;
-      display: flex; flex-wrap: wrap; align-items: center; gap: 60px;
+      display: flex; flex-wrap: wrap; align-items: stretch; gap: 48px;
     }
-    .hero-watermark {
-      flex-shrink: 0; width: 320px; height: auto; opacity: 0.12;
+    .hero-logo-side {
+      flex-shrink: 0; display: flex; align-items: stretch;
+    }
+    .hero-logo-side img {
+      height: 100%; width: auto; max-width: 220px; object-fit: contain;
       filter: drop-shadow(0 8px 32px rgba(0,0,0,0.3));
     }
     .hero-text-side {
-      flex: 1; text-align: right;
-      display: flex; flex-direction: column; align-items: flex-end;
+      flex: 1; display: flex; flex-direction: column; align-items: flex-start;
+      justify-content: center;
     }
 
     .hero-badge {
@@ -407,8 +410,8 @@
       }
       .nav-links.active { display: flex; }
       .mobile-menu-btn { display: block; }
-      .hero-content { padding: 120px 20px 80px; flex-direction: column; }
-      .hero-watermark { width: 200px; opacity: 0.08; }
+      .hero-content { padding: 120px 20px 80px; flex-direction: column; align-items: center; }
+      .hero-logo-side img { max-width: 160px; height: auto; }
       .hero h1 { font-size: 34px; }
       .hero-stats { flex-direction: column; gap: 24px; }
       .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -468,7 +471,9 @@
     <div class="hero-overlay"></div>
     <div class="hero-pattern"></div>
     <div class="hero-content">
-      <img src="logo-full.png" alt="Fligen Aircrafts Trading" class="hero-watermark">
+      <div class="hero-logo-side">
+        <img src="logo-full.png" alt="Fligen Aircrafts Trading">
+      </div>
       <div class="hero-text-side">
         <div class="hero-badge" data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</div>
         <h1 data-en="Global <span>Aviation</span> Trading" data-ar="التجارة <span>العالمية</span> للطيران">Global <span>Aviation</span> Trading</h1>
