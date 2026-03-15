@@ -130,17 +130,21 @@
       position: relative; z-index: 2;
       max-width: 1180px; margin: 0 auto;
       padding: 140px 32px 100px; width: 100%;
-      display: flex; flex-wrap: wrap; align-items: stretch; gap: 48px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .hero-top {
+      display: flex; align-items: stretch; gap: 40px; width: 100%;
     }
     .hero-logo-side {
-      flex-shrink: 0; display: flex; align-items: stretch;
+      width: 40%; position: relative; flex-shrink: 0;
     }
     .hero-logo-side img {
-      height: 100%; width: auto; max-width: 220px; object-fit: contain;
+      position: absolute; top: 0; left: 0;
+      height: 100%; width: auto; object-fit: contain;
       filter: drop-shadow(0 8px 32px rgba(0,0,0,0.3));
     }
     .hero-text-side {
-      flex: 1; display: flex; flex-direction: column; align-items: flex-start;
+      flex: 1; display: flex; flex-direction: column; align-items: flex-end; text-align: right;
       justify-content: center;
     }
 
@@ -165,7 +169,7 @@
       background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text; line-height: 1.1; margin-bottom: 24px;
-      max-width: 680px; letter-spacing: -0.02em;
+      letter-spacing: -0.02em; white-space: nowrap;
     }
     .hero h1 span {
       background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
@@ -184,7 +188,7 @@
 
     .arabesque-divider {
       display: flex; align-items: center; justify-content: center;
-      gap: 16px; padding: 24px 0; width: 100%; max-width: 600px;
+      gap: 16px; padding: 24px 0; width: 100%; max-width: 600px; margin: 0 auto; flex-basis: 100%;
     }
     .arabesque-divider .line {
       flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
@@ -410,8 +414,9 @@
       }
       .nav-links.active { display: flex; }
       .mobile-menu-btn { display: block; }
-      .hero-content { padding: 120px 20px 80px; flex-direction: column; align-items: center; }
-      .hero-logo-side img { max-width: 160px; height: auto; }
+      .hero-content { padding: 120px 20px 80px; }
+      .hero-top { flex-direction: column; }
+      .hero-logo-side img { max-width: 140px; height: auto; }
       .hero h1 { font-size: 34px; }
       .hero-stats { flex-direction: column; gap: 24px; }
       .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -471,21 +476,23 @@
     <div class="hero-overlay"></div>
     <div class="hero-pattern"></div>
     <div class="hero-content">
-      <div class="hero-logo-side">
-        <img src="logo-full.png" alt="Fligen Aircrafts Trading">
-      </div>
-      <div class="hero-text-side">
-        <div class="hero-badge" data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</div>
-        <h1 data-en="Global <span>Aviation</span> Trading" data-ar="التجارة <span>العالمية</span> للطيران">Global <span>Aviation</span> Trading</h1>
-        <div class="hero-desc"><span class="hero-company">Fligen Aircrafts Trading Ltd.</span><br>License #20898<br>۞ Wholesale of Airplanes Trading<br>۞ Wholesale of Spare Parts and Sections Trading of Airplanes</div>
-        <a href="#contact" class="hero-cta" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch
-          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <div class="arabesque-divider">
-          <div class="line"></div>
-          <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
-          <div class="line"></div>
+      <div class="hero-top">
+        <div class="hero-logo-side">
+          <img src="logo-full.png" alt="Fligen Aircrafts Trading">
         </div>
+        <div class="hero-text-side">
+          <div class="hero-badge" data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</div>
+          <h1 data-en="Global <span>Aviation</span> Trading" data-ar="التجارة <span>العالمية</span> للطيران">Global <span>Aviation</span> Trading</h1>
+          <div class="hero-desc"><span class="hero-company">Fligen Aircrafts Trading Ltd.</span><br>License #20898<br>۞ Wholesale of Airplanes Trading<br>۞ Wholesale of Spare Parts and Sections Trading of Airplanes</div>
+          <a href="#contact" class="hero-cta" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="arabesque-divider">
+        <div class="line"></div>
+        <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
+        <div class="line"></div>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
