@@ -130,6 +130,15 @@
       position: relative; z-index: 2;
       max-width: 1180px; margin: 0 auto;
       padding: 140px 32px 100px; width: 100%;
+      display: flex; align-items: center; gap: 60px;
+    }
+    .hero-watermark {
+      flex-shrink: 0; width: 320px; height: auto; opacity: 0.12;
+      filter: drop-shadow(0 8px 32px rgba(0,0,0,0.3));
+    }
+    .hero-text-side {
+      flex: 1; text-align: center;
+      display: flex; flex-direction: column; align-items: center;
     }
 
     .hero-badge {
@@ -397,7 +406,8 @@
       }
       .nav-links.active { display: flex; }
       .mobile-menu-btn { display: block; }
-      .hero-content { padding: 120px 20px 80px; }
+      .hero-content { padding: 120px 20px 80px; flex-direction: column; }
+      .hero-watermark { width: 200px; opacity: 0.08; }
       .hero h1 { font-size: 34px; }
       .hero-stats { flex-direction: column; gap: 24px; }
       .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -433,7 +443,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="logo-full.png" alt="Fligen Logo">
+        <img src="logo-icon.png" alt="Fligen Logo">
         <div class="nav-logo-text">
           <span class="nav-logo-title" data-en="FLIGEN Aircrafts Trading" data-ar="FLIGEN تجارة الطائرات">FLIGEN Aircrafts Trading</span>
         </div>
@@ -457,29 +467,32 @@
     <div class="hero-overlay"></div>
     <div class="hero-pattern"></div>
     <div class="hero-content">
-      <div class="hero-badge" data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</div>
-      <h1 data-en="Global <span>Aviation</span> Trading" data-ar="التجارة <span>العالمية</span> للطيران">Global <span>Aviation</span> Trading</h1>
-      <div class="hero-desc"><span class="hero-company">Fligen Aircrafts Trading Ltd.</span><br>License #ADFZ-20898<br>۞ Wholesale of Airplanes Trading<br>۞ Wholesale of Spare Parts and Sections Trading of Airplanes</div>
-      <a href="#contact" class="hero-cta" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <div class="arabesque-divider">
-        <div class="line"></div>
-        <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
-        <div class="line"></div>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <h3 data-en="B2B" data-ar="B2B">B2B</h3>
-          <p data-en="Wholesale Trading" data-ar="تجارة بالجملة">Wholesale Trading</p>
+      <img src="logo-full.png" alt="Fligen Aircrafts Trading" class="hero-watermark">
+      <div class="hero-text-side">
+        <div class="hero-badge" data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</div>
+        <h1 data-en="Global <span>Aviation</span> Trading" data-ar="التجارة <span>العالمية</span> للطيران">Global <span>Aviation</span> Trading</h1>
+        <div class="hero-desc"><span class="hero-company">Fligen Aircrafts Trading Ltd.</span><br>License #20898<br>۞ Wholesale of Airplanes Trading<br>۞ Wholesale of Spare Parts and Sections Trading of Airplanes</div>
+        <a href="#contact" class="hero-cta" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="arabesque-divider">
+          <div class="line"></div>
+          <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
+          <div class="line"></div>
         </div>
-        <div class="hero-stat">
-          <h3 data-en="Civil Use" data-ar="استخدام مدني">Civil Use</h3>
-          <p data-en="General Aviation" data-ar="الطيران العام">General Aviation</p>
-        </div>
-        <div class="hero-stat">
-          <h3 data-en="Worldwide" data-ar="عالمياً">Worldwide</h3>
-          <p data-en="Supply Network" data-ar="شبكة توريد">Supply Network</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3 data-en="B2B" data-ar="B2B">B2B</h3>
+            <p data-en="Wholesale Trading" data-ar="تجارة بالجملة">Wholesale Trading</p>
+          </div>
+          <div class="hero-stat">
+            <h3 data-en="Civil Use" data-ar="استخدام مدني">Civil Use</h3>
+            <p data-en="General Aviation" data-ar="الطيران العام">General Aviation</p>
+          </div>
+          <div class="hero-stat">
+            <h3 data-en="Worldwide" data-ar="عالمياً">Worldwide</h3>
+            <p data-en="Supply Network" data-ar="شبكة توريد">Supply Network</p>
+          </div>
         </div>
       </div>
     </div>
