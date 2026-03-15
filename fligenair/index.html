@@ -130,15 +130,15 @@
       position: relative; z-index: 2;
       max-width: 1180px; margin: 0 auto;
       padding: 140px 32px 100px; width: 100%;
-      display: flex; align-items: center; gap: 60px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 60px;
     }
     .hero-watermark {
       flex-shrink: 0; width: 320px; height: auto; opacity: 0.12;
       filter: drop-shadow(0 8px 32px rgba(0,0,0,0.3));
     }
     .hero-text-side {
-      flex: 1; text-align: center;
-      display: flex; flex-direction: column; align-items: center;
+      flex: 1; text-align: right;
+      display: flex; flex-direction: column; align-items: flex-end;
     }
 
     .hero-badge {
@@ -181,7 +181,7 @@
 
     .arabesque-divider {
       display: flex; align-items: center; justify-content: center;
-      gap: 16px; padding: 24px 0; max-width: 600px; margin: 0 auto;
+      gap: 16px; padding: 24px 0; width: 100%; max-width: 600px;
     }
     .arabesque-divider .line {
       flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
@@ -209,8 +209,9 @@
     .hero-cta svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; }
 
     .hero-stats {
-      display: flex; gap: 56px; margin-top: 72px;
-      padding-top: 40px;
+      display: flex; gap: 56px; margin-top: 12px;
+      padding-top: 40px; text-align: center;
+      width: 100%; justify-content: center;
     }
     .hero-stat h3 {
       font-size: 32px; font-weight: 700; letter-spacing: -0.02em;
@@ -480,19 +481,19 @@
           <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
           <div class="line"></div>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <h3 data-en="B2B" data-ar="B2B">B2B</h3>
-            <p data-en="Wholesale Trading" data-ar="تجارة بالجملة">Wholesale Trading</p>
-          </div>
-          <div class="hero-stat">
-            <h3 data-en="Civil Use" data-ar="استخدام مدني">Civil Use</h3>
-            <p data-en="General Aviation" data-ar="الطيران العام">General Aviation</p>
-          </div>
-          <div class="hero-stat">
-            <h3 data-en="Worldwide" data-ar="عالمياً">Worldwide</h3>
-            <p data-en="Supply Network" data-ar="شبكة توريد">Supply Network</p>
-          </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3 data-en="B2B" data-ar="B2B">B2B</h3>
+          <p data-en="Wholesale Trading" data-ar="تجارة بالجملة">Wholesale Trading</p>
+        </div>
+        <div class="hero-stat">
+          <h3 data-en="Civil Use" data-ar="استخدام مدني">Civil Use</h3>
+          <p data-en="General Aviation" data-ar="الطيران العام">General Aviation</p>
+        </div>
+        <div class="hero-stat">
+          <h3 data-en="Worldwide" data-ar="عالمياً">Worldwide</h3>
+          <p data-en="Supply Network" data-ar="شبكة توريد">Supply Network</p>
         </div>
       </div>
     </div>
