@@ -167,6 +167,10 @@
       margin-bottom: 40px; font-weight: 400; line-height: 1.75;
     }
 
+    .hero-company {
+      color: var(--gold-light); font-weight: 600;
+    }
+
     .hero-cta {
       display: inline-flex; align-items: center; gap: 10px;
       background: var(--red); color: white; text-decoration: none;
@@ -346,7 +350,7 @@
     .form-submit:hover { background: #7E1C2B; transform: translateY(-1px); box-shadow: 0 4px 16px rgba(155,35,53,0.3); }
 
     /* ═══ FOOTER ═══ */
-    footer { background: #3D3220; color: rgba(255,255,255,0.55); padding: 48px 32px; }
+    footer { background: linear-gradient(135deg, #3D3220 0%, #4E3D28 50%, #3D3220 100%); color: rgba(255,255,255,0.55); padding: 48px 32px; }
     .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
     .footer-logo { display: flex; align-items: center; gap: 14px; }
     .footer-logo img { height: 32px; opacity: 0.6; }
@@ -408,7 +412,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="logo.jpg" alt="Fligen Logo">
+        <img src="logo.png" alt="Fligen Logo">
         <div class="nav-logo-text">
           <span class="nav-logo-title">FLIGEN</span>
           <span class="nav-logo-subtitle" data-en="Aircrafts Trading" data-ar="تجارة الطائرات">Aircrafts Trading</span>
@@ -435,13 +439,13 @@
     <div class="hero-content">
       <div class="hero-badge" data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</div>
       <h1 data-en="Global <span>Aviation</span> Trading" data-ar="التجارة <span>العالمية</span> للطيران">Global <span>Aviation</span> Trading</h1>
-      <p class="hero-desc" data-en="Fligen Aircrafts Trading Ltd. — your trusted partner in wholesale aircraft, aviation engine, and spare parts trading." data-ar="فليجن لتجارة الطائرات ذ.م.م — شريككم الموثوق في تجارة الطائرات ومحركات الطيران وقطع الغيار بالجملة.">Fligen Aircrafts Trading Ltd. — your trusted partner in wholesale aircraft, aviation engine, and spare parts trading.</p>
+      <p class="hero-desc" data-en="&lt;span class='hero-company'&gt;Fligen Aircrafts Trading Ltd.&lt;/span&gt; — specialized wholesale supply of aircraft, engines, and components for global aviation." data-ar="&lt;span class='hero-company'&gt;فليجن لتجارة الطائرات ذ.م.م&lt;/span&gt; — توريد متخصص بالجملة للطائرات والمحركات والمكونات لقطاع الطيران العالمي."><span class="hero-company">Fligen Aircrafts Trading Ltd.</span> — specialized wholesale supply of aircraft, engines, and components for global aviation.</p>
       <a href="#contact" class="hero-cta" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch
         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
       <div class="hero-stats">
         <div class="hero-stat">
-          <h3 data-en="B2B" data-ar="أعمال">B2B</h3>
+          <h3 data-en="B2B" data-ar="B2B">B2B</h3>
           <p data-en="Wholesale Trading" data-ar="تجارة بالجملة">Wholesale Trading</p>
         </div>
         <div class="hero-stat">
@@ -461,7 +465,7 @@
     <div class="section-inner">
       <div class="section-label fade-up" data-en="ABOUT US" data-ar="عن الشركة">ABOUT US</div>
       <h2 class="section-title fade-up" data-en="Trusted Aviation Trading Partner" data-ar="شريك موثوق في تجارة الطيران">Trusted Aviation Trading Partner</h2>
-      <p class="section-desc fade-up" data-en="Fligen Aircrafts Trading Ltd. is headquartered in Abu Dhabi, specializing in the wholesale trading of aircraft and aviation engines." data-ar="يقع المقر الرئيسي لشركة فليجن لتجارة الطائرات ذ.م.م في أبوظبي، وهي متخصصة في تجارة الطائرات ومحركات الطيران بالجملة.">Fligen Aircrafts Trading Ltd. is headquartered in Abu Dhabi, specializing in the wholesale trading of aircraft and aviation engines.</p>
+      <p class="section-desc fade-up" data-en="&lt;strong&gt;Fligen Aircrafts Trading Ltd., Abu Dhabi, UAE.&lt;/strong&gt;" data-ar="&lt;strong&gt;فليجن لتجارة الطائرات ذ.م.م، أبوظبي، الإمارات.&lt;/strong&gt;"><strong>Fligen Aircrafts Trading Ltd., Abu Dhabi, UAE.</strong></p>
       <div class="about-grid">
         <div class="about-text fade-up">
           <p data-en="With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market." data-ar="بفضل خبرتنا العميقة في الصناعة وموقعنا الاستراتيجي في قلب الشرق الأوسط، نربط المشترين والبائعين عبر سوق الطيران العالمي.">With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market.</p>
@@ -488,14 +492,14 @@
           <div class="service-num">01</div>
           <div class="service-content">
             <h3 data-en="Aviation Engines" data-ar="محركات الطيران">Aviation Engines</h3>
-            <p data-en="Our primary specialization — sourcing, trading and supplying turbofan, turboprop, and turboshaft engines for general and commercial aviation platforms worldwide." data-ar="تخصصنا الرئيسي — توفير وتجارة وتوريد محركات التوربوفان والتوربوبروب والتوربوشافت لمنصات الطيران التجارية حول العالم.">Our primary specialization — sourcing, trading and supplying turbofan, turboprop, and turboshaft engines for general and commercial aviation platforms worldwide.</p>
+            <p data-en="Our primary specialization — sourcing, trading and supplying turbofan, turboprop, and turboshaft engines for general and commercial aviation platforms worldwide." data-ar="تخصصنا الرئيسي — توفير وتجارة وتوريد محركات التوربوفان والتوربوبروب والتوربوشافت لمنصات الطيران العام والتجاري حول العالم.">Our primary specialization — sourcing, trading and supplying turbofan, turboprop, and turboshaft engines for general and commercial aviation platforms worldwide.</p>
           </div>
         </div>
         <div class="service-row fade-up">
           <div class="service-num">02</div>
           <div class="service-content">
             <h3 data-en="Spare Parts & Components" data-ar="قطع الغيار والمكونات">Spare Parts & Components</h3>
-            <p data-en="Supply and delivery of OEM-certified aircraft spare parts, sections, and components. From avionics to landing gear — traceable, quality-assured parts for maintenance and overhaul." data-ar="توريد وتسليم قطع غيار الطائرات والأقسام والمكونات المعتمدة. من إلكترونيات الطيران إلى معدات الهبوط — قطع غيار قابلة للتتبع ومضمونة الجودة للصيانة والعمرة.">Supply and delivery of OEM-certified aircraft spare parts, sections, and components. From avionics to landing gear — traceable, quality-assured parts for maintenance and overhaul.</p>
+            <p data-en="Supply and delivery of OEM-certified aircraft spare parts, sections, and components. From avionics to landing gear — traceable, quality-assured parts for maintenance and overhaul." data-ar="توريد وتسليم قطع غيار الطائرات والأقسام والمكونات المعتمدة من الشركة المصنعة (OEM). من إلكترونيات الطيران إلى معدات الهبوط — قطع غيار قابلة للتتبع ومضمونة الجودة للصيانة والعمرة.">Supply and delivery of OEM-certified aircraft spare parts, sections, and components. From avionics to landing gear — traceable, quality-assured parts for maintenance and overhaul.</p>
           </div>
         </div>
         <div class="service-row fade-up">
@@ -514,7 +518,7 @@
     <div class="section-inner">
       <div class="section-label fade-up" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</div>
       <h2 class="section-title fade-up" data-en="Trade Control & Compliance" data-ar="الرقابة التجارية والامتثال">Trade Control & Compliance</h2>
-      <p class="section-desc fade-up" data-en="Fligen Aircrafts Trading operates in full compliance with all applicable international laws, regulations, and trade control requirements." data-ar="تعمل شركة فليغن لتجارة الطائرات بالامتثال الكامل لجميع القوانين واللوائح الدولية المعمول بها ومتطلبات الرقابة التجارية.">Fligen Aircrafts Trading operates in full compliance with all applicable international laws, regulations, and trade control requirements.</p>
+      <p class="section-desc fade-up" data-en="Fligen Aircrafts Trading operates in full compliance with all applicable international laws, regulations, and trade control requirements." data-ar="تعمل شركة فليجن لتجارة الطائرات بالامتثال الكامل لجميع القوانين واللوائح الدولية المعمول بها ومتطلبات الرقابة التجارية.">Fligen Aircrafts Trading operates in full compliance with all applicable international laws, regulations, and trade control requirements.</p>
       <div class="compliance-content fade-up">
         <p data-en="We strictly adhere to:" data-ar="نلتزم بصرامة بـ:">We strictly adhere to:</p>
         <ul>
@@ -606,7 +610,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-logo">
-        <img src="logo.jpg" alt="Fligen">
+        <img src="logo.png" alt="Fligen">
         <span class="footer-text" data-en="&copy; 2026 Fligen Aircrafts Trading Ltd. Reg. 1355, Abu Dhabi. All rights reserved." data-ar="&copy; ٢٠٢٦ فليجن لتجارة الطائرات ذ.م.م. سجل تجاري ١٣٥٥، أبوظبي. جميع الحقوق محفوظة.">&copy; 2026 Fligen Aircrafts Trading Ltd. Reg. 1355, Abu Dhabi. All rights reserved.</span>
       </div>
       <div class="footer-uae">
