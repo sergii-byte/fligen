@@ -268,6 +268,16 @@
     .service-content h3 { font-size: 22px; font-weight: 600; margin-bottom: 12px; color: var(--gray-900); letter-spacing: -0.01em; }
     .service-content p { font-size: 15px; color: var(--gray-600); line-height: 1.75; max-width: 560px; }
 
+    .service-image {
+      width: 280px; min-width: 280px; border-radius: var(--radius);
+      overflow: hidden; aspect-ratio: 16/10;
+    }
+    .service-image img { width: 100%; height: 100%; object-fit: cover; }
+    @media (max-width: 768px) {
+      .service-row { flex-wrap: wrap; }
+      .service-image { width: 100%; min-width: unset; }
+    }
+
     /* ═══ COMPLIANCE ═══ */
     .compliance { background: var(--off-white); }
     .compliance-content {
@@ -497,7 +507,11 @@
             <div class="about-accent"></div>
           </div>
           <div class="about-image">
-            <img src="business-jet.jpg" alt="Business jet">
+            <img src="jet-dubai.jpg" alt="Business jet in Dubai">
+            <div class="about-accent"></div>
+          </div>
+          <div class="about-image">
+            <img src="jet-tarmac.jpg" alt="Business jet on tarmac">
             <div class="about-accent"></div>
           </div>
         </div>
@@ -518,12 +532,19 @@
             <h3 data-en="Aviation Engines &amp; Powerplants" data-ar="محركات الطيران ومحطات الطاقة">Aviation Engines &amp; Powerplants</h3>
             <p data-en="Our primary specialization. We manage the sourcing, trading, and supply of turbofan, turboprop, and turboshaft engines for both commercial and general aviation platforms on a global scale." data-ar="تخصصنا الرئيسي. ندير توفير وتجارة وتوريد محركات التوربوفان والتوربوبروب والتوربوشافت لمنصات الطيران التجاري والعام على نطاق عالمي.">Our primary specialization. We manage the sourcing, trading, and supply of turbofan, turboprop, and turboshaft engines for both commercial and general aviation platforms on a global scale.</p>
           </div>
+          <div class="service-image">
+            <img src="boeing-front.jpg" alt="Commercial aircraft engines">
+          </div>
         </div>
         <div class="service-row fade-up">
           <div class="service-num">02</div>
           <div class="service-content">
             <h3 data-en="General &amp; Emerging Aviation" data-ar="الطيران العام والناشئ">General &amp; Emerging Aviation</h3>
             <p data-en="We facilitate the acquisition of aircraft for private owners, charter companies, and flight departments. Our portfolio spans the full spectrum of flight — from conventional light aircraft to the future of urban air mobility, including eVTOL, electric, and hybrid-electric platforms." data-ar="نسهّل اقتناء الطائرات للملاك الخاصين وشركات الطيران المستأجر وأقسام الطيران. تمتد محفظتنا عبر الطيف الكامل للطيران — من الطائرات الخفيفة التقليدية إلى مستقبل التنقل الجوي الحضري، بما في ذلك منصات eVTOL والطائرات الكهربائية والهجينة.">We facilitate the acquisition of aircraft for private owners, charter companies, and flight departments. Our portfolio spans the full spectrum of flight — from conventional light aircraft to the future of urban air mobility, including eVTOL, electric, and hybrid-electric platforms.</p>
+          </div>
+          <div class="service-image" style="display: flex; flex-direction: column; gap: 8px; aspect-ratio: unset;">
+            <img src="evtol.png" alt="eVTOL aircraft" style="border-radius: var(--radius); aspect-ratio: 16/10; object-fit: cover;">
+            <img src="light-aircraft.jpg" alt="Light aircraft fleet" style="border-radius: var(--radius); aspect-ratio: 16/10; object-fit: cover;">
           </div>
         </div>
         <div class="service-row fade-up">
