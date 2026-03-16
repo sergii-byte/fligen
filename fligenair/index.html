@@ -145,7 +145,7 @@
       position: absolute; top: 0; left: 0;
       height: 100%; width: auto; object-fit: contain;
       filter: drop-shadow(0 8px 32px rgba(0,0,0,0.3));
-      opacity: 0.85;
+      opacity: 1;
     }
     .hero-text-side {
       flex: 1; display: flex; flex-direction: column; align-items: flex-end; text-align: right;
@@ -187,7 +187,7 @@
     }
 
     .hero-company {
-      color: var(--gold-light); font-weight: 600;
+      color: rgba(255,255,255,0.55); font-weight: 600;
     }
 
     .arabesque-divider {
@@ -211,8 +211,8 @@
     .hero-cta {
       display: inline-flex; align-items: center; gap: 10px;
       background: var(--red); color: white; text-decoration: none;
-      padding: 15px 36px; border-radius: 10px;
-      font-weight: 600; font-size: 15px;
+      padding: 8px 18px; border-radius: 100px;
+      font-weight: 600; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
       transition: all 0.25s ease; letter-spacing: 0.3px;
       box-shadow: 0 4px 16px rgba(212,54,75,0.25);
     }
@@ -476,7 +476,7 @@
       <a href="#" class="nav-logo">
         <img src="logo-icon.png" alt="Fligen Logo">
         <div class="nav-logo-text">
-          <span class="nav-logo-title" data-en="FLIGEN Aircrafts Trading" data-ar="FLIGEN تجارة الطائرات">FLIGEN Aircrafts Trading</span>
+          <img src="company-name-dark.png" alt="Fligen Aircrafts Trading" style="height: 24px; width: auto;">
         </div>
       </a>
       <ul class="nav-links" id="navLinks">
@@ -504,25 +504,11 @@
         </div>
         <div class="hero-text-side">
           <div class="hero-badge" data-en="Abu Dhabi, UAE" data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</div>
-          <h1 data-en="Global <span>Aviation</span> Trading" data-ar="التجارة <span>العالمية</span> للطيران">Global <span>Aviation</span> Trading</h1>
+          <img src="company-name-gold.png" alt="FLIGEN Aircrafts Trading" style="height: clamp(38px, 5.5vw, 68px); width: auto; margin-bottom: 24px;">
           <div class="hero-desc" data-en="&lt;span class='hero-company'&gt;Fligen Aircrafts Trading Ltd.&lt;/span&gt;&lt;br&gt;License #20898&lt;br&gt;۞ Wholesale of Airplanes Trading&lt;br&gt;۞ Wholesale of Spare Parts and Sections Trading of Airplanes" data-ar="&lt;span class='hero-company'&gt;فليجن لتجارة الطائرات ذ.م.م&lt;/span&gt;&lt;br&gt;رخصة #20898&lt;br&gt;۞ تجارة الطائرات - بالجملة&lt;br&gt;۞ تجارة قطع غيار الطائرات ومكوناتها - بالجملة"><span class="hero-company">Fligen Aircrafts Trading Ltd.</span><br>License #20898<br>۞ Wholesale of Airplanes Trading<br>۞ Wholesale of Spare Parts and Sections Trading of Airplanes</div>
           <a href="#contact" class="hero-cta" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch
             <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <h3 data-en="B2B" data-ar="B2B">B2B</h3>
-          <p data-en="Wholesale Trading" data-ar="تجارة بالجملة">Wholesale Trading</p>
-        </div>
-        <div class="hero-stat">
-          <h3 data-en="Civil Use" data-ar="استخدام مدني">Civil Use</h3>
-          <p data-en="General Aviation" data-ar="الطيران العام">General Aviation</p>
-        </div>
-        <div class="hero-stat">
-          <h3 data-en="Worldwide" data-ar="عالمياً">Worldwide</h3>
-          <p data-en="Supply Network" data-ar="شبكة توريد">Supply Network</p>
         </div>
       </div>
       <div class="arabesque-divider" style="transform: translateX(49px);">
@@ -530,6 +516,7 @@
         <img src="logo-icon.png" alt="Fligen" style="width: 32px; height: 32px; object-fit: contain; opacity: 0.6;">
         <div class="line"></div>
       </div>
+      <div class="hero-desc hero-motto" style="text-align: center; max-width: 700px; margin: 12px auto 0; transform: translateX(49px); color: var(--gold-light);" data-en="At Fligen Aircraft Trading, we don't just trade assets — we build long-term partnerships based on trust and a shared passion for aviation." data-ar="في فليجن لتجارة الطائرات، نحن لا نتاجر بالأصول فحسب — بل نبني شراكات طويلة الأمد قائمة على الثقة والشغف المشترك بالطيران.">At Fligen Aircraft Trading, we don't just trade assets — we build long-term partnerships based on trust and a shared passion for aviation.</div>
     </div>
   </section>
   <!-- ABOUT -->
@@ -540,14 +527,20 @@
       <p class="section-desc fade-up" data-en="&lt;strong&gt;Fligen Aircrafts Trading Ltd. — Abu Dhabi, UAE&lt;/strong&gt;" data-ar="&lt;strong&gt;فليجن لتجارة الطائرات ذ.م.م — أبوظبي، الإمارات&lt;/strong&gt;"><strong>Fligen Aircrafts Trading Ltd. — Abu Dhabi, UAE</strong></p>
       <div class="about-grid">
         <div class="about-text fade-up">
-          <p data-en="With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market." data-ar="بفضل خبرتنا العميقة في الصناعة وموقعنا الاستراتيجي في قلب الشرق الأوسط، نربط المشترين والبائعين عبر سوق الطيران العالمي.">With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market.</p>
-          <p data-en="Our core strength lies in sourcing and supplying aviation engines, airframes, and certified spare parts. We serve operators, charter companies, leasing firms, agencies and private owners worldwide, ensuring every transaction meets the highest standards of quality and compliance." data-ar="تكمن قوتنا الأساسية في توفير وتوريد محركات الطيران وهياكل الطائرات وقطع الغيار المعتمدة. نخدم المشغلين وشركات الطيران المستأجر وشركات التأجير والوكالات والملاك الخاصين حول العالم، مع ضمان أن كل معاملة تلبي أعلى معايير الجودة والامتثال.">Our core strength lies in sourcing and supplying aviation engines, airframes, and certified spare parts. We serve operators, charter companies, leasing firms, agencies and private owners worldwide, ensuring every transaction meets the highest standards of quality and compliance.</p>
-          <p data-en="We build long-term partnerships with our clients, offering flexible procurement solutions and efficient logistics to ensure timely delivery wherever it is needed." data-ar="نبني شراكات طويلة الأمد مع عملائنا، ونقدم حلول شراء مرنة ولوجستيات فعالة لضمان التسليم في الوقت المناسب أينما كانت الحاجة.">We build long-term partnerships with our clients, offering flexible procurement solutions and efficient logistics to ensure timely delivery wherever it is needed.</p>
+          <p data-en="With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market. Fligen Aircraft Trading is a aviation brokerage and trading firm with a global footprint." data-ar="بفضل خبرتنا العميقة في الصناعة وموقعنا الاستراتيجي في قلب الشرق الأوسط، نربط المشترين والبائعين عبر سوق الطيران العالمي. فليجن لتجارة الطائرات هي شركة وساطة وتجارة طيران ذات بصمة عالمية.">With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market. Fligen Aircraft Trading is a aviation brokerage and trading firm with a global footprint.</p>
+          <p data-en="We specialize in the complex market of aircraft and engine transactions, serving both the commercial airline industry and the private business aviation sector. Our expertise lies in bridging the gap between technical compliance and strategic commercial goals." data-ar="نحن متخصصون في السوق المعقد لمعاملات الطائرات والمحركات، ونخدم صناعة الطيران التجاري وقطاع طيران الأعمال الخاص. تكمن خبرتنا في سد الفجوة بين الامتثال التقني والأهداف التجارية الاستراتيجية.">We specialize in the complex market of aircraft and engine transactions, serving both the commercial airline industry and the private business aviation sector. Our expertise lies in bridging the gap between technical compliance and strategic commercial goals.</p>
+          <p data-en="Whether managing the sale of wide-body engines or the procurement of executive business jets, we prioritize precision, transparency, and operational excellence." data-ar="سواء كنا ندير بيع محركات الطائرات العريضة أو شراء طائرات الأعمال التنفيذية، فإننا نعطي الأولوية للدقة والشفافية والتميز التشغيلي.">Whether managing the sale of wide-body engines or the procurement of executive business jets, we prioritize precision, transparency, and operational excellence.</p>
           <p data-en="With a strong focus on innovation, we actively explore opportunities in next-generation aviation technologies — from electric propulsion and eVTOL platforms to sustainable aviation solutions that are shaping the future of the industry." data-ar="مع تركيز قوي على الابتكار، نستكشف بنشاط الفرص في تقنيات الطيران من الجيل القادم — من الدفع الكهربائي ومنصات eVTOL إلى حلول الطيران المستدام التي تشكل مستقبل الصناعة.">With a strong focus on innovation, we actively explore opportunities in next-generation aviation technologies — from electric propulsion and eVTOL platforms to sustainable aviation solutions that are shaping the future of the industry.</p>
         </div>
-        <div class="about-image fade-up">
-          <img src="about.jpg" alt="Aviation engine maintenance">
-          <div class="about-accent"></div>
+        <div class="about-images fade-up" style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="about-image">
+            <img src="about.jpg" alt="Aviation engine">
+            <div class="about-accent"></div>
+          </div>
+          <div class="about-image">
+            <img src="business-jet.jpg" alt="Business jet">
+            <div class="about-accent"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -689,7 +682,7 @@
     <div class="footer-inner">
       <div class="footer-left">
         <img src="logo-icon.png" alt="Fligen" style="height: 36px; opacity: 0.7;">
-        <span class="footer-brand" data-en="FLIGEN Aircrafts Trading" data-ar="FLIGEN تجارة الطائرات">FLIGEN Aircrafts Trading</span>
+        <img src="company-name-dark.png" alt="FLIGEN Aircrafts Trading" style="height: 20px; width: auto;">
       </div>
       <div class="footer-center">
         <div style="display: inline-flex; align-items: center; gap: 6px;">
