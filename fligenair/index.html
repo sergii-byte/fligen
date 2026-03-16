@@ -74,11 +74,6 @@
     .nav-logo { display: flex; align-items: center; gap: 14px; text-decoration: none; }
     .nav-logo img { height: 48px; width: auto; }
     .nav-logo-text { display: flex; align-items: center; }
-    .nav-logo-title {
-      font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; color: #5C4A2A;
-      letter-spacing: 1.5px; line-height: 1;
-    }
-
     .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
     .nav-links a {
       text-decoration: none; color: var(--gray-600);
@@ -168,19 +163,6 @@
       0%, 100% { opacity: 1; } 50% { opacity: 0.4; }
     }
 
-    .hero h1 {
-      font-size: clamp(38px, 5.5vw, 68px); font-weight: 700;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text; line-height: 1.1; margin-bottom: 24px;
-      letter-spacing: -0.02em; white-space: nowrap;
-    }
-    .hero h1 span {
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
     .hero-desc {
       font-size: 14px; color: rgba(255,255,255,0.55); max-width: 520px;
       margin-bottom: 40px; font-weight: 400; line-height: 1.75;
@@ -213,24 +195,11 @@
       background: var(--red); color: white; text-decoration: none;
       padding: 8px 18px; border-radius: 100px;
       font-weight: 600; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase;
-      transition: all 0.25s ease; letter-spacing: 0.3px;
+      transition: all 0.25s ease;
       box-shadow: 0 4px 16px rgba(212,54,75,0.25);
     }
     .hero-cta:hover { background: #BE2E42; transform: translateY(-2px); box-shadow: 0 6px 24px rgba(212,54,75,0.3); }
-    .hero-cta svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; }
-
-    .hero-stats {
-      display: flex; gap: 56px; margin-top: 12px;
-      padding-top: 40px; text-align: center;
-      width: 100%; justify-content: center; transform: translateX(49px);
-    }
-    .hero-stat h3 {
-      font-size: 32px; font-weight: 700; letter-spacing: -0.02em;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text; margin-bottom: 4px;
-    }
-    .hero-stat p { font-size: 13px; color: rgba(255,255,255,0.4); font-weight: 400; letter-spacing: 0.3px; }
+    .hero-cta svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; }
 
     /* ═══ SECTIONS ═══ */
     section { padding: 110px 32px; }
@@ -270,13 +239,6 @@
       aspect-ratio: 4/3; background: var(--gray-100);
     }
     .about-image img { width: 100%; height: 100%; object-fit: cover; }
-    .about-image-placeholder {
-      width: 100%; height: 100%;
-      display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px;
-      background: linear-gradient(145deg, var(--gray-100) 0%, var(--gray-200) 100%);
-    }
-    .about-image-placeholder svg { width: 48px; height: 48px; stroke: var(--gray-400); fill: none; stroke-width: 1.5; }
-    .about-image-placeholder span { font-size: 12px; color: var(--gray-400); letter-spacing: 0.5px; }
     .about-accent {
       position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
       background: linear-gradient(90deg, var(--green), var(--gold), var(--red));
@@ -405,18 +367,10 @@
     }
     .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; gap: 12px; }
     .footer-left { display: flex; flex-direction: row; align-items: center; gap: 10px; }
-    .footer-brand { font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #5C4A2A; letter-spacing: 1.5px; }
     .footer-center { text-align: center; font-size: 11px; color: var(--gray-600); line-height: 1.8; }
     .footer-center a { color: var(--gray-600); text-decoration: none; }
     .footer-center a:hover { color: var(--gold); }
     .footer-right { display: none; }
-    .uae-flag { display: flex; width: 28px; height: 18px; border-radius: 3px; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.1); }
-    .uae-flag-vert { background: var(--green); width: 28%; }
-    .uae-flag-horiz { width: 72%; display: flex; flex-direction: column; }
-    .uae-flag-horiz div:nth-child(1) { background: #1A7A5C; flex: 1; }
-    .uae-flag-horiz div:nth-child(2) { background: #FFFFFF; flex: 1; }
-    .uae-flag-horiz div:nth-child(3) { background: #000000; flex: 1; }
-
     /* ═══ RESPONSIVE ═══ */
     @media (max-width: 900px) {
       .service-row { gap: 24px; }
@@ -435,8 +389,7 @@
       .hero-content { padding: 120px 20px 80px; }
       .hero-top { flex-direction: column; }
       .hero-logo-side img { max-width: 140px; height: auto; }
-      .hero h1 { font-size: 34px; }
-      .hero-stats { flex-direction: column; gap: 24px; }
+      .hero-motto { font-size: 12px !important; }
       .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 36px; }
       .contact-info { padding-top: 0; }
       .form-row { grid-template-columns: 1fr; }
@@ -526,15 +479,15 @@
       <h2 class="section-title fade-up" data-en="About Us" data-ar="عن الشركة">About Us</h2>
       <div class="about-grid">
         <div class="about-text fade-up">
-          <p>With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market.</p>
-          <p>Fligen Aircrafts Trading is a aviation brokerage and trading firm with a global footprint. We specialize in the complex market of aircraft and engine transactions, serving both the commercial airline industry and the private business aviation sector.</p>
-          <p>Our expertise lies in bridging the gap between technical compliance and strategic commercial goals. Whether managing the sale of wide-body engines or the procurement of executive business jets, we prioritize precision, transparency, and operational excellence.</p>
-          <p>With a strong focus on innovation, we actively explore opportunities in next-generation aviation technologies — from electric propulsion and eVTOL platforms to sustainable aviation solutions that are shaping the future of the industry.</p>
-          <p><strong>What We Bring to the Table:</strong></p>
+          <p data-en="With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market." data-ar="بفضل خبرتنا العميقة في الصناعة وموقعنا الاستراتيجي في قلب الشرق الأوسط، نربط المشترين والبائعين عبر سوق الطيران العالمي.">With deep industry expertise and a strategic location in the heart of the Middle East, we connect buyers and sellers across the global aviation market.</p>
+          <p data-en="Fligen Aircrafts Trading is a aviation brokerage and trading firm with a global footprint. We specialize in the complex market of aircraft and engine transactions, serving both the commercial airline industry and the private business aviation sector." data-ar="فليجن لتجارة الطائرات هي شركة وساطة وتجارة طيران ذات بصمة عالمية. نحن متخصصون في السوق المعقد لمعاملات الطائرات والمحركات، ونخدم صناعة الطيران التجاري وقطاع طيران الأعمال الخاص.">Fligen Aircrafts Trading is a aviation brokerage and trading firm with a global footprint. We specialize in the complex market of aircraft and engine transactions, serving both the commercial airline industry and the private business aviation sector.</p>
+          <p data-en="Our expertise lies in bridging the gap between technical compliance and strategic commercial goals. Whether managing the sale of wide-body engines or the procurement of executive business jets, we prioritize precision, transparency, and operational excellence." data-ar="تكمن خبرتنا في سد الفجوة بين الامتثال التقني والأهداف التجارية الاستراتيجية. سواء كنا ندير بيع محركات الطائرات العريضة أو شراء طائرات الأعمال التنفيذية، فإننا نعطي الأولوية للدقة والشفافية والتميز التشغيلي.">Our expertise lies in bridging the gap between technical compliance and strategic commercial goals. Whether managing the sale of wide-body engines or the procurement of executive business jets, we prioritize precision, transparency, and operational excellence.</p>
+          <p data-en="With a strong focus on innovation, we actively explore opportunities in next-generation aviation technologies — from electric propulsion and eVTOL platforms to sustainable aviation solutions that are shaping the future of the industry." data-ar="مع تركيز قوي على الابتكار، نستكشف بنشاط الفرص في تقنيات الطيران من الجيل القادم — من الدفع الكهربائي ومنصات eVTOL إلى حلول الطيران المستدام التي تشكل مستقبل الصناعة.">With a strong focus on innovation, we actively explore opportunities in next-generation aviation technologies — from electric propulsion and eVTOL platforms to sustainable aviation solutions that are shaping the future of the industry.</p>
+          <p data-en="&lt;strong&gt;What We Bring to the Table:&lt;/strong&gt;" data-ar="&lt;strong&gt;ما نقدمه:&lt;/strong&gt;"><strong>What We Bring to the Table:</strong></p>
           <ul style="list-style: none; padding: 0;">
-            <li style="padding: 6px 0 6px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;"><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Deep Technical Insight:</strong> Extensive experience in engine operation, compliance, and asset valuation.</li>
-            <li style="padding: 6px 0 6px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;"><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Market Versatility:</strong> A unique portfolio that spans from high-capacity commercial powerplants to agile private aircraft.</li>
-            <li style="padding: 6px 0 6px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;"><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Global Logistics Support:</strong> Proven capability in managing international transactions, ensuring seamless delivery across borders.</li>
+            <li style="padding: 6px 0 6px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;" data-en="&lt;span style='position: absolute; left: 0; color: var(--gold);'&gt;&#9670;&lt;/span&gt;&lt;strong&gt;Deep Technical Insight:&lt;/strong&gt; Extensive experience in engine operation, compliance, and asset valuation." data-ar="&lt;span style='position: absolute; right: 0; color: var(--gold);'&gt;&#9670;&lt;/span&gt;&lt;strong&gt;رؤية تقنية عميقة:&lt;/strong&gt; خبرة واسعة في تشغيل المحركات والامتثال وتقييم الأصول."><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Deep Technical Insight:</strong> Extensive experience in engine operation, compliance, and asset valuation.</li>
+            <li style="padding: 6px 0 6px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;" data-en="&lt;span style='position: absolute; left: 0; color: var(--gold);'&gt;&#9670;&lt;/span&gt;&lt;strong&gt;Market Versatility:&lt;/strong&gt; A unique portfolio that spans from high-capacity commercial powerplants to agile private aircraft." data-ar="&lt;span style='position: absolute; right: 0; color: var(--gold);'&gt;&#9670;&lt;/span&gt;&lt;strong&gt;تنوع السوق:&lt;/strong&gt; محفظة فريدة تمتد من محركات الطاقة التجارية عالية السعة إلى الطائرات الخاصة المرنة."><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Market Versatility:</strong> A unique portfolio that spans from high-capacity commercial powerplants to agile private aircraft.</li>
+            <li style="padding: 6px 0 6px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;" data-en="&lt;span style='position: absolute; left: 0; color: var(--gold);'&gt;&#9670;&lt;/span&gt;&lt;strong&gt;Global Logistics Support:&lt;/strong&gt; Proven capability in managing international transactions, ensuring seamless delivery across borders." data-ar="&lt;span style='position: absolute; right: 0; color: var(--gold);'&gt;&#9670;&lt;/span&gt;&lt;strong&gt;دعم لوجستي عالمي:&lt;/strong&gt; قدرة مثبتة في إدارة المعاملات الدولية وضمان التسليم السلس عبر الحدود."><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Global Logistics Support:</strong> Proven capability in managing international transactions, ensuring seamless delivery across borders.</li>
           </ul>
         </div>
         <div class="about-images fade-up" style="display: flex; flex-direction: column; gap: 20px;">
@@ -554,33 +507,33 @@
   <section class="services" id="services">
     <div class="section-inner">
       <div class="section-label fade-up" data-en="OUR PRODUCTS" data-ar="منتجاتنا">OUR PRODUCTS</div>
-      <h2 class="section-title fade-up">Strategic Aviation Solutions &amp; Global Supply</h2>
-      <p class="section-desc fade-up">Fligen Aircrafts Trading provides a reliable supply of aviation assets worldwide, built on a foundation of technical trust, deep expertise, and a borderless global reach. We bridge the gap between complex technical compliance and strategic market acquisitions.</p>
-      <h3 class="fade-up" style="font-size: 20px; font-weight: 600; color: var(--gray-900); margin-top: 48px; margin-bottom: 8px;">Our Core Specializations</h3>
+      <h2 class="section-title fade-up" data-en="Aviation Solutions &amp; Global Supply" data-ar="حلول الطيران والتوريد العالمي">Aviation Solutions &amp; Global Supply</h2>
+      <p class="section-desc fade-up" data-en="Fligen Aircrafts Trading provides a reliable supply of aviation assets worldwide, built on a foundation of technical trust, deep expertise, and a borderless global reach. We bridge the gap between complex technical compliance and strategic market acquisitions." data-ar="توفر فليجن لتجارة الطائرات إمداداً موثوقاً لأصول الطيران حول العالم، مبنياً على أساس من الثقة التقنية والخبرة العميقة والوصول العالمي بلا حدود. نحن نسد الفجوة بين الامتثال التقني المعقد وعمليات الاستحواذ الاستراتيجية في السوق.">Fligen Aircrafts Trading provides a reliable supply of aviation assets worldwide, built on a foundation of technical trust, deep expertise, and a borderless global reach. We bridge the gap between complex technical compliance and strategic market acquisitions.</p>
+      <h3 class="fade-up" style="font-size: 20px; font-weight: 600; color: var(--gray-900); margin-top: 48px; margin-bottom: 8px;" data-en="Our Core Specializations" data-ar="تخصصاتنا الأساسية">Our Core Specializations</h3>
       <div class="services-list">
         <div class="service-row fade-up">
           <div class="service-num">01</div>
           <div class="service-content">
-            <h3>Aviation Engines &amp; Powerplants</h3>
-            <p>Our primary specialization. We manage the sourcing, trading, and supply of turbofan, turboprop, and turboshaft engines for both commercial and general aviation platforms on a global scale.</p>
+            <h3 data-en="Aviation Engines &amp; Powerplants" data-ar="محركات الطيران ومحطات الطاقة">Aviation Engines &amp; Powerplants</h3>
+            <p data-en="Our primary specialization. We manage the sourcing, trading, and supply of turbofan, turboprop, and turboshaft engines for both commercial and general aviation platforms on a global scale." data-ar="تخصصنا الرئيسي. ندير توفير وتجارة وتوريد محركات التوربوفان والتوربوبروب والتوربوشافت لمنصات الطيران التجاري والعام على نطاق عالمي.">Our primary specialization. We manage the sourcing, trading, and supply of turbofan, turboprop, and turboshaft engines for both commercial and general aviation platforms on a global scale.</p>
           </div>
         </div>
         <div class="service-row fade-up">
           <div class="service-num">02</div>
           <div class="service-content">
-            <h3>General &amp; Emerging Aviation</h3>
-            <p>We facilitate the acquisition of aircraft for private owners, charter companies, and flight departments. Our portfolio spans the full spectrum of flight — from conventional light aircraft to the future of urban air mobility, including eVTOL, electric, and hybrid-electric platforms.</p>
+            <h3 data-en="General &amp; Emerging Aviation" data-ar="الطيران العام والناشئ">General &amp; Emerging Aviation</h3>
+            <p data-en="We facilitate the acquisition of aircraft for private owners, charter companies, and flight departments. Our portfolio spans the full spectrum of flight — from conventional light aircraft to the future of urban air mobility, including eVTOL, electric, and hybrid-electric platforms." data-ar="نسهّل اقتناء الطائرات للملاك الخاصين وشركات الطيران المستأجر وأقسام الطيران. تمتد محفظتنا عبر الطيف الكامل للطيران — من الطائرات الخفيفة التقليدية إلى مستقبل التنقل الجوي الحضري، بما في ذلك منصات eVTOL والطائرات الكهربائية والهجينة.">We facilitate the acquisition of aircraft for private owners, charter companies, and flight departments. Our portfolio spans the full spectrum of flight — from conventional light aircraft to the future of urban air mobility, including eVTOL, electric, and hybrid-electric platforms.</p>
           </div>
         </div>
         <div class="service-row fade-up">
           <div class="service-num">03</div>
           <div class="service-content">
-            <h3>Spare Parts &amp; Components</h3>
-            <p>A comprehensive supply of OEM-certified parts and sections. From avionics to landing gear, we provide traceable, quality-assured components essential for maintenance, repair, and overhaul (MRO) operations.</p>
+            <h3 data-en="Spare Parts &amp; Components" data-ar="قطع الغيار والمكونات">Spare Parts &amp; Components</h3>
+            <p data-en="A comprehensive supply of OEM-certified parts and sections. From avionics to landing gear, we provide traceable, quality-assured components essential for maintenance, repair, and overhaul (MRO) operations." data-ar="توريد شامل لقطع الغيار والأقسام المعتمدة من الشركة المصنعة. من إلكترونيات الطيران إلى معدات الهبوط، نوفر مكونات قابلة للتتبع ومضمونة الجودة وضرورية لعمليات الصيانة والإصلاح والعمرة (MRO).">A comprehensive supply of OEM-certified parts and sections. From avionics to landing gear, we provide traceable, quality-assured components essential for maintenance, repair, and overhaul (MRO) operations.</p>
           </div>
         </div>
       </div>
-      <h3 class="fade-up" style="font-size: 20px; font-weight: 600; color: var(--gray-900); margin-top: 48px; margin-bottom: 16px;">The Fligen Advantage</h3>
+      <h3 class="fade-up" style="font-size: 20px; font-weight: 600; color: var(--gray-900); margin-top: 48px; margin-bottom: 16px;" data-en="The Fligen Advantage" data-ar="ميزة فليجن">The Fligen Advantage</h3>
       <ul class="fade-up" style="list-style: none; padding: 0; max-width: 720px;">
         <li style="padding: 8px 0 8px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;"><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Deep Technical Insight:</strong> Extensive experience in engine operations, technical compliance, and asset valuation ensures every transaction meets the highest industry standards.</li>
         <li style="padding: 8px 0 8px 20px; position: relative; font-size: 15px; color: var(--gray-600); line-height: 1.75;"><span style="position: absolute; left: 0; color: var(--gold);">&#9670;</span><strong>Market Versatility:</strong> A unique capability to manage diverse assets — from high-capacity commercial powerplants to agile private jets and innovative electric aircraft.</li>
@@ -592,17 +545,17 @@
   <section class="compliance" id="compliance">
     <div class="section-inner">
       <div class="section-label fade-up" data-en="COMPLIANCE" data-ar="الامتثال">COMPLIANCE</div>
-      <h2 class="section-title fade-up">Trade Control, Compliance &amp; Ethics</h2>
-      <p class="section-desc fade-up">Fligen Aircrafts Trading is committed to the highest standards of integrity and transparency. We operate in strict accordance with all applicable international laws, trade regulations, and rigorous compliance protocols.</p>
+      <h2 class="section-title fade-up" data-en="Trade Control, Compliance &amp; Ethics" data-ar="الرقابة التجارية والامتثال والأخلاقيات">Trade Control, Compliance &amp; Ethics</h2>
+      <p class="section-desc fade-up" data-en="Fligen Aircrafts Trading is committed to the highest standards of integrity and transparency. We operate in strict accordance with all applicable international laws, trade regulations, and rigorous compliance protocols." data-ar="تلتزم فليجن لتجارة الطائرات بأعلى معايير النزاهة والشفافية. نعمل وفقاً صارماً لجميع القوانين الدولية المعمول بها ولوائح التجارة وبروتوكولات الامتثال الصارمة.">Fligen Aircrafts Trading is committed to the highest standards of integrity and transparency. We operate in strict accordance with all applicable international laws, trade regulations, and rigorous compliance protocols.</p>
       <div class="compliance-content fade-up">
-        <h3 style="font-size: 20px; font-weight: 600; color: var(--gray-900); margin-top: 32px; margin-bottom: 12px;">Regulatory Framework &amp; Sanctions Adherence</h3>
-        <p>We maintain an uncompromising approach to global trade security, ensuring full compliance with:</p>
+        <h3 style="font-size: 20px; font-weight: 600; color: var(--gray-900); margin-top: 32px; margin-bottom: 12px;" data-en="Regulatory Framework &amp; Sanctions Adherence" data-ar="الإطار التنظيمي والالتزام بالعقوبات">Regulatory Framework &amp; Sanctions Adherence</h3>
+        <p data-en="We maintain an uncompromising approach to global trade security, ensuring full compliance with:" data-ar="نحافظ على نهج صارم تجاه أمن التجارة العالمية، مع ضمان الامتثال الكامل لـ:">We maintain an uncompromising approach to global trade security, ensuring full compliance with:</p>
         <ul>
-          <li><strong>UAE Federal &amp; Regional Laws:</strong> Full alignment with the federal legal framework of the United Arab Emirates and the specific regulatory requirements of the Abu Dhabi jurisdiction.</li>
-          <li><strong>Export Control &amp; Dual-Use Regulations:</strong> Rigorous monitoring of export licenses, dual-use goods regulations to prevent unauthorized technology transfer and end-use verification procedures.</li>
-          <li><strong>International Sanctions &amp; EMBARGO Protocols:</strong> Strict adherence to UN, EU, and US (OFAC) sanctions regimes, as well as UAE-specific trade restrictions.</li>
+          <li data-en="&lt;strong&gt;UAE Federal &amp; Regional Laws:&lt;/strong&gt; Full alignment with the federal legal framework of the United Arab Emirates and the specific regulatory requirements of the Abu Dhabi jurisdiction." data-ar="&lt;strong&gt;القوانين الاتحادية والمحلية الإماراتية:&lt;/strong&gt; التوافق الكامل مع الإطار القانوني الاتحادي لدولة الإمارات والمتطلبات التنظيمية لإمارة أبوظبي."><strong>UAE Federal &amp; Regional Laws:</strong> Full alignment with the federal legal framework of the United Arab Emirates and the specific regulatory requirements of the Abu Dhabi jurisdiction.</li>
+          <li data-en="&lt;strong&gt;Export Control &amp; Dual-Use Regulations:&lt;/strong&gt; Rigorous monitoring of export licenses, dual-use goods regulations to prevent unauthorized technology transfer and end-use verification procedures." data-ar="&lt;strong&gt;رقابة التصدير ولوائح الاستخدام المزدوج:&lt;/strong&gt; مراقبة صارمة لتراخيص التصدير ولوائح السلع ذات الاستخدام المزدوج لمنع نقل التكنولوجيا غير المصرح به وإجراءات التحقق من الاستخدام النهائي."><strong>Export Control &amp; Dual-Use Regulations:</strong> Rigorous monitoring of export licenses, dual-use goods regulations to prevent unauthorized technology transfer and end-use verification procedures.</li>
+          <li data-en="&lt;strong&gt;International Sanctions &amp; EMBARGO Protocols:&lt;/strong&gt; Strict adherence to UN, EU, and US (OFAC) sanctions regimes, as well as UAE-specific trade restrictions." data-ar="&lt;strong&gt;العقوبات الدولية وبروتوكولات الحظر:&lt;/strong&gt; الالتزام الصارم بأنظمة عقوبات الأمم المتحدة والاتحاد الأوروبي والولايات المتحدة (OFAC)، فضلاً عن القيود التجارية الخاصة بالإمارات."><strong>International Sanctions &amp; EMBARGO Protocols:</strong> Strict adherence to UN, EU, and US (OFAC) sanctions regimes, as well as UAE-specific trade restrictions.</li>
         </ul>
-        <p style="margin-top: 24px;">We are committed to ethical business practices and transparent operations. Every transaction undergoes thorough compliance screening to ensure adherence to all applicable legal frameworks. We continuously audit our procedures to remain a trusted and compliant partner in the global aviation supply chain.</p>
+        <p style="margin-top: 24px;" data-en="We are committed to ethical business practices and transparent operations. Every transaction undergoes thorough compliance screening to ensure adherence to all applicable legal frameworks. We continuously audit our procedures to remain a trusted and compliant partner in the global aviation supply chain." data-ar="نحن ملتزمون بممارسات الأعمال الأخلاقية والعمليات الشفافة. تخضع كل معاملة لفحص امتثال شامل لضمان الالتزام بجميع الأطر القانونية المعمول بها. نراجع إجراءاتنا باستمرار لنبقى شريكاً موثوقاً وملتزماً في سلسلة توريد الطيران العالمية.">We are committed to ethical business practices and transparent operations. Every transaction undergoes thorough compliance screening to ensure adherence to all applicable legal frameworks. We continuously audit our procedures to remain a trusted and compliant partner in the global aviation supply chain.</p>
       </div>
     </div>
   </section>
